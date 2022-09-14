@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-weight: 400;
+}
+h3 {
+  color: #4b4b4b;
+  opacity: 0.5;
+}
+nav {
+  background-color: #4b4b4b;
+}
+
+.navlinks {
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em;
+  margin: 0 auto 3em auto;
+  list-style: none;
+}
+
+/* HexGrid */
+.hexgrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 3fr;
+}
+.hexgroup1 {
+  grid-column: 1/6;
+  margin: 0 auto;
+}
+.hexgroup2 {
+  grid-column: 1/6;
+  margin: 0 auto;
+}
+.hex-item {
+  width: clamp(2em, 16em, 20em);
+  height: clamp(4em, 18em, 22em);
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  margin: -1em 1em;
+}
+
+/* smitty */
+
+#smith {
+  background-color: #2db39b;
+  margin-top: 5em;
+}
+
+.personGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 70%;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5em;
+}
+.personGrid h2 {
+  margin-top: -1.5em;
+  font-size: 2.5em;
+}
+.personGrid p {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.facePic {
+  margin: 0 auto;
+  width: 16em;
+  height: 18em;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+/* Kontaktformular ting */
+
+footer {
+  background-color: #4b4b4b;
+}
+
+.footerGrid {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #2db39b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: flex-end;
+  width: 10%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+/* Add a background color and some padding around the form */
+.container {
+  padding: 5em;
+}
