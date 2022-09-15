@@ -16,12 +16,24 @@ nav {
 
 .navlinks {
   position: relative;
-  width: 70%;
+  width: 600px;
+  max-width: 1200px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 2em;
   margin: 0 auto 3em auto;
   list-style: none;
+}
+.navshapeItem {
+  width: 7em;
+  height: auto;
+}
+
+.navshape {
+  position: absolute;
+  width: 7em;
+  height: 4em;
+  margin-top: -1em;
 }
 
 /* HexGrid */
@@ -47,6 +59,10 @@ nav {
   margin: -1.5em 1em;
 }
 
+.hex-item:hover {
+  opacity: 0.5;
+}
+
 /* smitty */
 
 #smith {
@@ -59,7 +75,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 3fr 0.5fr;
-  width: 70%;
+  width: 1000px;
   align-items: center;
   margin: 1em auto;
   padding: 4em;
@@ -106,7 +122,7 @@ footer {
 }
 
 .footerGrid {
-  width: 80%;
+  width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 4fr 1.3fr;
